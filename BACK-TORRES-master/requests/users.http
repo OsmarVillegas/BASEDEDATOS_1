@@ -1,0 +1,30 @@
+
+###
+
+GET  http://localhost:4000/api/users
+###
+
+POST http://localhost:4000/api/users
+Content-Type: application/json
+
+{
+    "nombreUsuario":"osmar",
+    "apellidosUsuario":"Gomez",
+    "rol":"Admin",
+	"estado":"Activo"
+}
+
+###
+GET  http://localhost:4000/api/users/640f4e681b2b29e9339a82ef
+
+###
+
+DELETE http://localhost:4000/api/users/640f4e461b2b29e9339a82ec
+
+###
+PUT  http://localhost:4000/api/users/640f4e681b2b29e9339a82ef
+Content-Type: application/json
+
+{
+    "nombreUsuario":"Osvaldo"
+}

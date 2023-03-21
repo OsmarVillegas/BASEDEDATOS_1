@@ -1,0 +1,42 @@
+###
+
+GET  http://localhost:4000/api/proyects
+###
+
+POST http://localhost:4000/api/proyects
+Content-Type: application/json
+
+    {
+    "proyectName":"Po",
+	"proyectDes":"Hazlo",
+	"fechIn":"123",
+	"fechFin":"321",
+	"resp":"tu",
+	"state":"activo",
+    "proyectIntegrante":[
+        {
+            "name":"Mario"
+        }
+    ]
+
+
+    }      
+
+###
+GET  http://localhost:4000/api/proyects/64168d886347b9b4e3ea8028
+
+###
+
+DELETE http://localhost:4000/api/proyects/64168bcb6347b9b4e3ea8018
+
+###
+PUT  http://localhost:4000/api/proyects/64168bcb6347b9b4e3ea8018
+Content-Type: application/json
+
+{
+    
+   "resp":"nosotros"
+
+
+    
+}

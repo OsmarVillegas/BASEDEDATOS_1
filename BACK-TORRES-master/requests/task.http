@@ -1,0 +1,36 @@
+###
+
+GET  http://localhost:4000/api/tasks
+###
+
+POST http://localhost:4000/api/tasks
+Content-Type: application/json
+
+    {
+    "nombreProyecto":"Chin chu chan",
+    "nombreTarea":"imbecil",
+    "descripcion":"r1",
+    "fechaEntrega":"17/03/2023",
+    "estado":"pasivo",
+    "responsableTarea":"yo"
+
+    }      
+
+###
+GET  http://localhost:4000/api/tasks/64168bcb6347b9b4e3ea8018
+
+###
+
+DELETE http://localhost:4000/api/tasks/64168bcb6347b9b4e3ea8018
+
+###
+PUT  http://localhost:4000/api/tasks/64168c786347b9b4e3ea8023
+Content-Type: application/json
+
+{
+    
+    "nombreProyecto":"Chin chu calzon"
+
+
+    
+}
